@@ -60,30 +60,30 @@ public class Enemy : MonoBehaviour
             enemiesKilled++;
 			//UpdateHealthUI();
 			int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            if (enemiesKilled >= 8 && currentSceneIndex==2)
+            if (enemiesKilled >= 8 && currentSceneIndex==3)
             {
 				arr.balls=0;
-                ChangeLevel(3);
+                ChangeLevel(4);
             }
-			if (enemiesKilled >= 10 && currentSceneIndex==4)
-            {
-				arr.balls=0;
-                ChangeLevel(5);
-            }
-			if (enemiesKilled >= 12 && currentSceneIndex==6)
+			if (enemiesKilled >= 10 && currentSceneIndex==6)
             {
 				arr.balls=0;
                 ChangeLevel(7);
             }
-			if (enemiesKilled >= 15 && currentSceneIndex==8)
+			if (enemiesKilled >= 12 && currentSceneIndex==9)
             {
 				arr.balls=0;
-                ChangeLevel(9);
+                ChangeLevel(10);
             }
-			if (enemiesKilled >= 18 && currentSceneIndex==10)
+			if (enemiesKilled >= 15 && currentSceneIndex==12)
             {
 				arr.balls=0;
-                ChangeLevel(11);
+                ChangeLevel(13);
+            }
+			if (enemiesKilled >= 18 && currentSceneIndex==15)
+            {
+				arr.balls=0;
+                ChangeLevel(16);
             }
 
             // Reduce the player's health by 10
