@@ -58,8 +58,10 @@ public class Enemy : MonoBehaviour
 
             // Increment the kill count and check if it's time to change the level
             enemiesKilled++;
-			//UpdateHealthUI();
-			int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayDirtParticleEffect(); 
+
+            //UpdateHealthUI();
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             if (enemiesKilled >= 8 && currentSceneIndex==2)
             {
 				arr.balls=0;
@@ -98,7 +100,7 @@ public class Enemy : MonoBehaviour
 
             // Adjust the emission rate
             var emission = instantiatedParticle.emission;
-            emission.rateOverTime = new ParticleSystem.MinMaxCurve(9); // Adjust this value as needed
+            emission.rateOverTime = new ParticleSystem.MinMaxCurve(50); // Adjust this value as needed
 
             instantiatedParticle.Play();
 
