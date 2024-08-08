@@ -58,6 +58,7 @@ public class Enemy : MonoBehaviour
 
             // Increment the kill count and check if it's time to change the level
             enemiesKilled++;
+			PlayDirtParticleEffect();
 			//UpdateHealthUI();
 			int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             if (enemiesKilled >= 8 && currentSceneIndex==3)
