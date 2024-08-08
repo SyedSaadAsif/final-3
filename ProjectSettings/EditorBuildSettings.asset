@@ -12,11 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels Runner/Level 1 - Runner.unity
     guid: a9193d5665368da4b900f928e343be0b
   - enabled: 1
+    path: Assets/Scenes/Transition Scene/Transition scene.unity
+    guid: 9294fe56f24720746b323e4b261fccaf
+  - enabled: 1
     path: Assets/Scenes/Levels Slingshot/Slingshot 1.unity
     guid: d55e895dda9967542947e8f9f72fb1c9
   - enabled: 1
     path: Assets/Scenes/Levels Runner/Level 2 - Runner.unity
     guid: 7d84a9b196cc98142b9bc534ddf59d0b
+  - enabled: 1
+    path: Assets/Scenes/Transition Scene/Transition scene 2.unity
+    guid: 01971f37c97daa840880d64c4f29e65a
   - enabled: 1
     path: Assets/Scenes/Levels Slingshot/Slingshot 2.unity
     guid: 4a44d7ef89f33f34fad4c44397645637
@@ -24,17 +30,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels Runner/Level 3 - Runner.unity
     guid: 9ce299884c61d7b48b81ebbb0c6170de
   - enabled: 1
+    path: Assets/Scenes/Transition Scene/Transition scene 3.unity
+    guid: a03faf3183381f940896246b13546ec8
+  - enabled: 1
     path: Assets/Scenes/Levels Slingshot/Slingshot 3.unity
     guid: bbb3b16f2c204c749b0b27519ae46454
   - enabled: 1
     path: Assets/Scenes/Levels Runner/Level 4 - Runner.unity
     guid: 86d5c0dd38e79a4479c5153f5f702f25
   - enabled: 1
+    path: Assets/Scenes/Transition Scene/Transition scene 4.unity
+    guid: e3a6030c859322c478b7ecd199e77287
+  - enabled: 1
     path: Assets/Scenes/Levels Slingshot/Slingshot 4.unity
     guid: 72743f0571b05fe4082358fb3f93f5f3
   - enabled: 1
     path: Assets/Scenes/Levels Runner/Level 5 - Runner.unity
     guid: 3a2a9981f302371429695a699c694f28
+  - enabled: 1
+    path: Assets/Scenes/Transition Scene/Transition scene 5.unity
+    guid: f0cf2e36d64ff77469fe0b3ef774ed9e
   - enabled: 1
     path: Assets/Scenes/Levels Slingshot/Slingshot 5.unity
     guid: 5174c6a65ac4e3e4ab473ef515f8d77b

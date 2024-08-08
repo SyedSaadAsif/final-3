@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement; // Add this namespace for scene management
+using Cinemachine;
 
 public class Player : MonoBehaviour
 {
     [Header("Setting")]
-    private float moveSpeed = 10.0f;
+    public float moveSpeed = 10.0f;
     [Header("Control")]
     [SerializeField] private float slideSpeed = 15.0f;
     private float laneSwitchDuration = 0.5f; // Duration for switching lanes
@@ -29,7 +30,7 @@ public class Player : MonoBehaviour
     private float swipeThreshold = 50f; // Minimum distance for a swipe to be registered
 
     private bool isRunnerScene = false; // Add a flag to check if it's the runner scene
-
+    private bool isTransitionScene = false;
     void Start()
     {
         // Check if the current scene is a runner scene
@@ -37,6 +38,11 @@ public class Player : MonoBehaviour
         {
             isRunnerScene = true;
         }
+        if (SceneManager.GetActiveScene().name.Contains("Transition"))
+        {
+            isTransitionScene = true;
+        }
+
 
         // Define the positions of the lanes
         lanePositions = new Vector3[2];
@@ -50,9 +56,13 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (isRunnerScene)
+        if (isRunnerScene == true || isTransitionScene == true)
         {
             MoveForward();
+        }
+            if (isRunnerScene)
+        {
+           
             ManageControl();
             HandleDustParticle();
             if (isSwitchingLanes)
@@ -153,6 +163,11 @@ public class Player : MonoBehaviour
     // Here we are doing code for multipliers
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Camera transition 2"))
+        {
+            SceneManager.LoadScene("Transition scene 2");
+            Debug.Log("Condition is working");
+        }
         if (other.gameObject.CompareTag("Multiplier"))
         {
             counterLabel.text = countertext.ToString();
@@ -163,7 +178,6 @@ public class Player : MonoBehaviour
             LoadNextLevel(); // Call the method to load the next level
         }
     }
-
     private void HandleDustParticle()
     {
         if (moveSpeed > 0 && !dirtParticle.isPlaying)

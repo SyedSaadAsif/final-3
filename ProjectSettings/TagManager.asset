@@ -8,6 +8,8 @@ TagManager:
   - Multiplier
   - SlingshotWeapon
   - Level End
+  - Camera Transition
+  - 'Camera transition 2 '
   layers:
   - Default
   - TransparentFX

@@ -9,9 +9,10 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FX_Base
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: af9d3101091f90d4db78a2097d5dcb84, type: 2}
+  m_Parent: {fileID: 2100000, guid: e5dcde785cf022b4cb0d21918bdf3858, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
+  - _DETAIL_MULX2
   - _EMISSION
   m_InvalidKeywords: []
   m_LightmapFlags: 1
@@ -23,9 +24,13 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 2800000, guid: 7d5559d72bc37da4d81c0ef38a94bd1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

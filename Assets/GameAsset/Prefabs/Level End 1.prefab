@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8395942461430672266
+--- !u!1 &6925178148064404079
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 530919482822451881}
-  - component: {fileID: 4516525081587710469}
+  - component: {fileID: 2743205142286519720}
+  - component: {fileID: 5604635700196624372}
   m_Layer: 7
-  m_Name: Level End
-  m_TagString: Camera Transition
+  m_Name: Level End 1
+  m_TagString: Level End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &530919482822451881
+--- !u!4 &2743205142286519720
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395942461430672266}
+  m_GameObject: {fileID: 6925178148064404079}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 230}
+  m_LocalPosition: {x: 0, y: 0, z: 220.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4516525081587710469
+--- !u!65 &5604635700196624372
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395942461430672266}
+  m_GameObject: {fileID: 6925178148064404079}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
