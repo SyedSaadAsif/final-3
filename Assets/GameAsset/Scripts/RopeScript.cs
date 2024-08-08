@@ -110,23 +110,23 @@ public class RopeScript : MonoBehaviour
 	void UpdateHealth()
     {
 		int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-		if(currentSceneIndex == 2)
+		if(currentSceneIndex == 3)
 		{
 		 enemyNumber.text = Enemy.enemiesKilled.ToString()+" / 8"; // Update the UI text with the current health
 		}
-		if(currentSceneIndex == 4)
+		if(currentSceneIndex == 6)
 		{
 		 enemyNumber.text = Enemy.enemiesKilled.ToString()+" / 10"; // Update the UI text with the current health
 		}
-		if(currentSceneIndex == 6)
+		if(currentSceneIndex == 9)
 		{
 		 enemyNumber.text = Enemy.enemiesKilled.ToString()+" / 12"; // Update the UI text with the current health
 		}
-		if(currentSceneIndex == 8)
+		if(currentSceneIndex == 12)
 		{
 		 enemyNumber.text = Enemy.enemiesKilled.ToString()+" / 15"; // Update the UI text with the current health
 		}
-		if(currentSceneIndex == 10)
+		if(currentSceneIndex == 15)
 		{
 		 enemyNumber.text = Enemy.enemiesKilled.ToString()+" / 18"; // Update the UI text with the current health
 		}
